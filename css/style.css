@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+  margin: 5px;
+  padding: 0.25em;
+}
+
+body {
+  background-color: rgba(255, 255, 255, 0.5);
+  font-family: 'Arial', sans-serif;
+  font-size: 1em;
+  height: 90vh;
+  min-width: 900px;
+  min-height: 400px;
+}
+/*
+body * {
+  border: 0.5px solid lightGray;
+}
+*/
+
+header {
+  height: 10%;
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 2em;
+  font-family: 'Baloo Tammudu', cursive;
+  letter-spacing: 0.5em;
+  word-spacing: 3em;
+}
+
+main {
+  height: 80%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.display {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  border-radius: 10px;
+  font-family: 'Monospace', sans-serif;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+div > p {
+  padding-top: 1.5em;
+  border-radius: 20px;
+}
+
+footer {
+  height: 10%;
+}
+
+.weapon {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  border-radius: 10px;
+  transition: all 0.1s ease;
+}
+
+.rock {
+  background-image: url("https://vignette.wikia.nocookie.net/yandere-simulator-fanon/images/4/4e/Johnson.jpg/revision/latest?cb=20160625153352");
+}
+.paper {
+  background-image: url("http://www.historyofpaper.net/images/historyofpaper/old-document-1.jpg#.W5rnm-052MI.link");
+}
+.scissors {
+  background-image: url("https://sep.yimg.com/ay/yhst-17745174073719/9-serrated-dura-shears-fabric-scissors-for-professionals-54.jpg");
+}
+
+.playing {
+  transform: scale(1.04);
+  border: solid 5px gold;
+}
+
+#continue {
+   visibility: visible;
+   height : 33%;
+   width: 33%;
+   min-height: 100px;
+   min-width: 300px;
+   position: absolute;
+   top: 33%;
+   left:33%;
+   background-color: white;
+   border-radius: 20px;
+   border: 5px solid lightgrey;
+}
+
+button {
+  display: block;
+  padding: 1em;
+  margin: 0 auto;
+  position: relative;
+  top: 33%;
+  border-radius: 5px;
+}
+
+#message {
+  position: relative;
+  top: 15%;
+  text-align: center;
+  color: darkgrey;
+  font-size: 2em;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Baloo+Tammudu" rel="stylesheet">
+</head>
+<body>
+  <header>rock paper scissors</header>
+  <main>
+    <div id="continue">
+      <p id="message"></p>
+      <button type="button" name="button">
+        New Game!
+      </button>
+    </div>
+    <div class="display">
+      <div>
+        <p>Your Move</p>
+        <div id="player"></div>
+      </div>
+      <div>
+        <p>Computer Move</p>
+        <div id="computer"></div>
+      </div>
+      <div>
+        <p>Round Winner</p>
+        <div id="winner"></div>
+      </div>
+      <div>
+        <p>Game Score</p>
+        <div id="gameWinner"></div>
+      </div>
+    </div>
+    <div class="weapon rock" ></div>
+    <div class="weapon paper"></div>
+    <div class="weapon scissors"></div>
+    <audio id = "weapon rock" src="./sounds/tink.wav"></audio>
+    <audio id = "weapon paper" src="./sounds/tink.wav"></audio>
+    <audio id = "weapon scissors" src="./sounds/tink.wav"></audio>
+  </main>
+  <footer></footer>
+  <script src="./scripts/script.js"></script>
+</body>
+</html>
